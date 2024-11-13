@@ -537,8 +537,8 @@ div[data-category="pasta"] {
 }  
 
 footer {
-  background-color: #800000; /* Ændr farven efter behov */
-  color: #fff;
+  background-color: var(--primary-color) /* Ændr farven efter behov */
+  color: var(#BF5B23);
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -685,20 +685,71 @@ text-decoration: none;
 
   /* PART III END */
   
-  .section {
-    text-align: center; 
+  .section1 {
+
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto ;
+    width:var(--width-12col);
+    border-bottom: 1px solid #ffffff;
+    margin: 0 auto;
+  }
+
+    
+  .section2 {
+
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto ;
+    width:var(--width-12col);
+    margin: 0 auto;
+    padding: 20 auto;
   }
   
-  .section h2 {
+  /*. section1 h2 {
     color: white; 
     margin-bottom: 10px;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto;
+    width:var(--width-12col);
+    gap:var(--grid-gap);
+    margin: 0 auto;
+  }  */
+
+  .section1_left{
+    color: white; 
+    grid-column: 1 / span 6;
+    margin-top:0px;
+    grid-row: 1;
+    color: var(--background-color-light);
+    padding: 20px auto;
+  }
+
+  .section1_right {
+    color: white; 
+    grid-column: 9 / span 4;
+    margin-top:0px;
+    grid-row: 1;
+    color: var(--background-color-light);
   }
   
-  hr {
-    border: 1px solid white;
-    width: 50%; 
-    margin: 0 auto; 
+  .section2 h2 {
+    color: white; 
+    margin-bottom: 10px;
+  
+    gap:var(--grid-gap);
+    margin: 0 auto;
+  } 
+
+  .section2 h2 {
+    grid-column: 6 / span 12;
+    margin-top:0px;
+    grid-row: 1;
+    color: var(--background-color-light);
   }
+  
+  
 
   
   
