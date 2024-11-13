@@ -538,7 +538,7 @@ div[data-category="pasta"] {
 
 footer {
   background-color: var(--primary-color) /* Ændr farven efter behov */
-  color: var(#BF5B23);
+  color: #BF5B23;
   padding: 20px;
   display: flex;
   justify-content: space-between;
@@ -693,6 +693,7 @@ text-decoration: none;
     width:var(--width-12col);
     border-bottom: 1px solid #ffffff;
     margin: 0 auto;
+    padding-bottom: 10px;
   }
 
     
@@ -703,7 +704,7 @@ text-decoration: none;
     grid-template-rows: auto auto ;
     width:var(--width-12col);
     margin: 0 auto;
-    padding: 20 auto;
+    padding: 20 auto; 
   }
   
   /*. section1 h2 {
@@ -723,15 +724,18 @@ text-decoration: none;
     margin-top:0px;
     grid-row: 1;
     color: var(--background-color-light);
-    padding: 20px auto;
+    padding-top: 20px;
+    /* padding: 20px auto; */
+    text
   }
 
   .section1_right {
-    color: white; 
+    color: ; 
     grid-column: 9 / span 4;
-    margin-top:0px;
+    margin-top: 0px;
     grid-row: 1;
     color: var(--background-color-light);
+    padding-top: 20px;
   }
   
   .section2 h2 {
