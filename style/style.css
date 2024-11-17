@@ -565,8 +565,6 @@ footer {
 .icons {
   font-size: 12px;
 }
-
-
 .separator {
   height: 120px;
   background-color: white;
@@ -726,8 +724,10 @@ text-decoration: none;
     grid-row: 1;
     color: var(--background-color-light);
     padding-top: 20px;
-    /* padding: 20px auto; */
-    text
+  }
+
+  .section1_left ol li {
+    padding: 10px
   }
 
   .section1_right {
@@ -737,6 +737,10 @@ text-decoration: none;
     grid-row: 1;
     color: var(--background-color-light);
     padding-top: 20px;
+  }
+
+  .section1_right ul li {
+    padding: 5px;
   }
   
   .section2 h2 {
@@ -788,3 +792,87 @@ text-decoration: none;
     height: 2000px;
     width: 100%;
    }
+
+
+  /* Side 3 start */
+   .hero2 {
+    margin-top: -50px;
+      width: var(--width-full);
+      background-image: url('https://picsum.photos/1280/650');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:600px;
+      color: var(--category-dessert);
+    }
+
+    .about_image_area {
+      margin: 160px auto 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      width: var(--width-12col);
+    }
+
+
+    .about{
+      height: 600px;
+      width: var(--width-full);
+      background-image: url('../img/COLOURBOX63755070.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:600px;
+  
+      /*  clippy */
+      clip-path: polygon(0 0, 100% 11%, 100% 100%, 0% 100%);
+      position: relative;
+  }
+  .about_image_area {
+      margin: 160px auto 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      width: var(--width-12col);
+  }
+
+
+    .box2 {
+      width: 367px;
+      height: 187px;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0 0 0;
+      position: inherit;
+    flex-direction: column;
+      
+      left: var(--width-12col);
+      top: 100%;
+      border-radius: 5px;
+    }
+    .cai-text-small-header {
+      font-size: 15px;
+      color: #111111;
+    }
+  
+    .cai-text-big-header { 
+      font-size: 22px;
+      font-weight: bold;
+      color: #BF5B23;
+    }
+  
+    .cai-text-medium-header {
+      font-size: 15px;
+    }
+
+    .cai-text-medium2-header { 
+      font-size: 18px;
+      font-weight: bold;
+      color: #BF5B23;
+    }
+
+    .cai-text-medium3-header {
+      font-size: 20;
+      display: flex;
+      justify-content: center;
+    }
