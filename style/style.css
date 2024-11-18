@@ -914,6 +914,7 @@ text-decoration: none;
     .category_content_box_text{
       width: 70%;
       height: 60%;
+      color:var(--category-snacks)
     }
 
 
