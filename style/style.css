@@ -890,8 +890,31 @@ text-decoration: none;
       justify-content: center;
     }
 
-
-
+    .vores_medarbejdere {
+      width: var(--width-12col);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .category_content_box {
+      width: 50%;
+      height: 380px;
+      background-color: var(--background-color-light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .category_content_box img {
+      height: 100% ;
+      width: 100%;
+    }
+  
+    .category_content_box_text{
+      width: 70%;
+      height: 60%;
+    }
 
 
 
