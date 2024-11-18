@@ -78,8 +78,8 @@ body {
     height: 60px;
 }
 .menu-container {
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
+    display: flex;
+  
     width: var(--width-12col);
     margin: 0 auto 0 auto;
 }
@@ -93,19 +93,22 @@ body {
 color: var(--color-light);
 text-decoration: none;
 text-transform: uppercase;
-border-right: 1px solid var(--color-light);
-padding-right: 0 10px 0 10px;
+
+padding: 0 10px 0 10px;
 }
 .menu-container ul li a:hover {
     color: var(--primary-color);
     }
 
-    .menu-container ul li:last-child {
-        border-right: none;
-    }
+    
 .menu-container ul li {
+  border-right: 1px solid var(--color-light);
   list-style-type: none;
   margin: 10px 0;
+
+}
+.menu-container ul li:last-child {
+  border-right: none;
 }
 .hero {
 margin-top: -50px;
@@ -537,41 +540,35 @@ div[data-category="pasta"] {
   cursor: pointer;
 }  
 
+
 footer {
-  background-color: var(--primary-color) /* Ændr farven efter behov */
+  background-color: var(--primary-color); /* Ændr farven efter behov */
   color: #BF5B23;
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  height: 100px;
 }
 
-.social-media,
-.nav,
-.urls,
-.icons {
+.social-media {
   display: flex;
   align-items: center;
 }
 
-.social-media a,
-.nav a,
-.urls a {
-  margin-right: 10px;
-  text-decoration: none;
-  color: inherit;
-}
+.urls {
+  border-right:var(--background-color-light);
+  display: wrap;
+  justify-content: end;
+  }
 
 .icons {
-  font-size: 12px;
-}
-.separator {
-  height: 120px;
-  background-color: white;
-  width: 2px;
+  width: 25%;
   display: flex;
   align-items: center;
 }
+
 
   
   /* START HERE */
@@ -731,7 +728,6 @@ text-decoration: none;
   }
 
   .section1_right {
-    color: ; 
     grid-column: 9 / span 4;
     margin-top: 0px;
     grid-row: 1;
@@ -861,7 +857,7 @@ text-decoration: none;
       justify-content: center;
       margin: 20px 0 0 0;
       position: inherit;
-    flex-direction: column;
+      flex-direction: column;
       
       left: var(--width-12col);
       top: 100%;
@@ -892,4 +888,28 @@ text-decoration: none;
       font-size: 20;
       display: flex;
       justify-content: center;
+    }
+
+
+
+
+
+
+    @media (width < 768px) {
+      /* Styles for skærme op til 768px bredde */
+
+      :root{
+        --width-12col:100%
+      }
+      body{
+        background-color: red;
+      }
+
+      .todays_recipes_headline{
+        width: 100%;
+      }
+
+      nav ul {
+        flex-direction: column;
+      }
     }
