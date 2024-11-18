@@ -920,6 +920,68 @@ text-decoration: none;
     }
 
 
+    .mission1 {
+
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto auto ;
+      width:var(--width-12col);
+      border-bottom: 1px solid #ffffff;
+      margin: 0 auto;
+      padding-bottom: 10px;
+    }
+  
+      
+    .mission {
+  
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: auto auto ;
+      width:var(--width-12col);
+      margin: 0 auto;
+      padding: 20 auto; 
+    }
+  
+  .mission_left{
+    color: white; 
+    grid-column: 1 / span 6;
+    margin-top:0px;
+    grid-row: 1;
+    color: var(--background-color-light);
+    padding-top: 20px;
+  }
+
+  .mission_left ol li {
+    padding: 10px
+  }
+
+  .mission_right {
+    grid-column: 9 / span 4;
+    margin-top: 0px;
+    grid-row: 1;
+    color: var(--background-color-light);
+    padding-top: 20px;
+  }
+
+  .mission_right ul li {
+    padding: 5px;
+  }
+  
+  .mission1 h2 {
+    color: white; 
+    margin-bottom: 10px;
+  
+    gap:var(--grid-gap);
+    margin: 0 auto;
+  } 
+
+  .mission2 h2 {
+    grid-column: 6 / span 12;
+    margin-top:0px;
+    grid-row: 1;
+    color: var(--background-color-light);
+  }
+
 
     @media (width < 768px) {
       /* Styles for skærme op til 768px bredde */
