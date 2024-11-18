@@ -460,6 +460,7 @@ div[data-category="pasta"] {
   .category_content_box_text{
     width: 70%;
     height: 60%;
+    color: var(--background-color-dark-bg);
   }
 
 /* Recipe_page */
