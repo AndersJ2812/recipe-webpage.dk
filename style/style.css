@@ -984,21 +984,37 @@ text-decoration: none;
   }
 
 
-    @media (width < 768px) {
+@media (width < 768px) {
       /* Styles for skærme op til 768px bredde */
 
-      :root{
+  :root{
         --width-12col:100%
       }
-      body{
-        background-color: red;
-      }
 
-      .todays_recipes_headline{
+  .about_us_headline{
+    font-size: 15px;
+  }
+      
+  .todays_recipes_headline{
         width: 100%;
-      }
+        font-size: 15px;
+  }
 
-      nav ul {
-        flex-direction: column;
-      }
-    }
+  .todays_recipes_content{
+    width: 100%;
+    justify-content: flex-start;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .category_content_box{
+  width: var(--width-full);
+  image-resolution: var(--width-full);
+}
+
+  .vores_medarbejdere{
+    justify-content: flex-start;
+    width: var(--width-full);
+  }
+
+  .categories_content{
+    width: var(--width-12col);
+  }
