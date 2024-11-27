@@ -1018,3 +1018,13 @@ text-decoration: none;
   .categories_content{
     width: var(--width-12col);
   }
+
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer .urls {
+    display: none;
+  }
+}
